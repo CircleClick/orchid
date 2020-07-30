@@ -3,6 +3,8 @@
 - [Overview](#overview)
 - [Vision](#vision)
 - [FAQ](docs/faq.md)
+- [How to Use Orchid](docs/using-orchid.md)
+- [Accounts](docs/accounts.md)
 - [Apps](#apps)
 	- [Android](#app-android)
 	- [iOS](#app-ios)
