@@ -1,7 +1,5 @@
 <h1 align="center">
 <a href="https://www.orchid.com/"><img src="docs/img/logo.svg" alt="Orchid"></a>
-
-Orchid
 </h1>
 - [Overview](#overview)
 - [Vision](#vision)
