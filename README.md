@@ -1,5 +1,8 @@
-# [![](docs/img/logo.svg "Orchid Logo")](https://www.orchid.com/)
+<h1 align="center">
+<a href="https://www.orchid.com/"><img src="docs/img/logo.svg" alt="Orchid"></a>
 
+Orchid
+</h1>
 - [Overview](#overview)
 - [Vision](#vision)
 - [FAQ](docs/faq.md)
