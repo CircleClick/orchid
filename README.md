@@ -1,4 +1,4 @@
-# [![](docs/img/name_logo.png "Orchid Logo")](https://www.orchid.com/)
+# [![](docs/img/logo.svg "Orchid Logo")](https://www.orchid.com/)
 
 - [Overview](#overview)
 - [Vision](#vision)
