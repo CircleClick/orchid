@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <title>Orchid Accounts - Orchid</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Orchid Accounts";
+    var mkdocs_page_input_path = "accounts.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> Orchid</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="..">Home</a>
+	    </li>
+          
+            <li class="toctree-l1 current">
+		
+    <a class="current" href="./">Orchid Accounts</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l2"><a href="#orchid-accounts">Orchid Accounts</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l3" href="#the-deposit">The deposit</a></li>
+        
+            <li><a class="toctree-l3" href="#deposit-size-too-small">Deposit size too small</a></li>
+        
+            <li><a class="toctree-l3" href="#the-balance">The balance</a></li>
+        
+            <li><a class="toctree-l3" href="#orchid-account-functionality">Orchid Account Functionality</a></li>
+        
+        </ul>
+    
+
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../faq/">Orchid FAQ</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../using-orchid/">How to Use Orchid</a>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">Orchid</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>Orchid Accounts</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="orchid-accounts">Orchid Accounts</h1>
+<p>To create an Orchid account for use with the Orchid app to buy VPN service, see our <a href="https://orchid.com/join">set-up guide</a>.</p>
+<p>Orchid accounts exist as entries in an Ethereum smart contract which holds the OXT for users and pays providers. Funds exist on-chain so that providers can verify that funds exist for the services they are providing and can claim those funds. Learn more about how our 2nd layer scaling solution works: <a href="https://blog.orchid.com/introducing-nanopayments">Introducing Nanopayments</a>.</p>
+<p>To access the Orchid account, you must use a web3 enabled browser plugin such as <a href="https://metamask.io">Metamask</a> (recommended) or a DApp enabled mobile wallet such as <a href="https://trustwallet.com">Trust Wallet</a>, <a href="https://brd.com">BRD Wallet</a> or <a href="https://wallet.coinbase.com">Coinbase Wallet</a>. Access to the Ethereum wallet used to create the account is required to maintain access to the account.</p>
+<p>Orchid Labs hosts a web3 enabled website which provides an easy way to setup and manage OXT funds for service. Load <a href="https://account.orchid.com">https://account.orchid.com</a> in your web3 browser to access the account. It is also possible to call the smart contract functions <a href="https://etherscan.io/address/0xb02396f06CC894834b7934ecF8c8E5Ab5C1d12F1#code">directly</a> or to host the website yourself.</p>
+<p>The OXT held in the Orchid account has a balance and deposit component. The balance is the amount of OXT available to pay for service. The deposit size signals information to the provider.</p>
+<h2 id="the-deposit">The deposit</h2>
+<p>The deposit is required to accept service and is verified by providers. The deposit prevents double spending and in general, the deposit maintains good standing on the network.</p>
+<p>The size of the deposit determines the face value of the nanopayments. The face value refers to the amount of OXT that a provider claims when they receive a winning off-chain nanopayment. Currently the face value is set to half the deposit. Providers need to receive nanopayments with a high enough face value to provide service, given current market conditions.</p>
+<p>Our recommendation for VPN service on Orchid is given in the DApp at the time of creation to include current market conditions.</p>
+<h2 id="deposit-size-too-small">Deposit size too small</h2>
+<p>Under certain market conditions, users need to increase the size of their deposit. The market conditions are primarily driven by the price of OXT and the amount of Ethereum gas required to claim a ticket. The face value of the ticket needs to be large enough for it to make sense to the provider to provide service. When the face values are too small, the size of the deposit needs to be increased.</p>
+<p>If you have received a message in the Orchid app that the deposit is too small, follow these steps:</p>
+<ul>
+<li>Open the Ethereum wallet you used to create the Orchid account (i.e. load Metamask or Trust Wallet)</li>
+<li>Load <a href="https://account.orchid.com">account.orchid.com</a>. You should see your funded account.</li>
+<li>Click on "Info" in the upper right, scroll to the bottom and find the "Market Stats" section for current minimums and recommendations</li>
+<li>Click on "More" in the upper right, then select "Move Funds"</li>
+<li>Ensure that your current deposit at the recommendation</li>
+<li>If you need more OXT in the balance as well as the deposit, click on the "Add" button to add funds from your Ethereum wallet</li>
+</ul>
+<p>Market conditions are driven by the price of OXT and the <a href="https://ethgasstation.info">current gas cost</a> on Ethereum. Please <a href="https://www.orchid.com/contact">contact us</a> for support if you received the "deposit size too small" message and are having difficulty.</p>
+<h2 id="the-balance">The balance</h2>
+<p>The balance is the amount of OXT that can be used to pay for service. </p>
+<p>Using the current price of OXT and market prices (which includes the gas costs of network operations), we can estimate how many Gigabytes of VPN service you can get for the given balance. Note that as the variables change, the estimated amount of service changes.  </p>
+<h2 id="orchid-account-functionality">Orchid Account Functionality</h2>
+<p>Here is an overview of the different ways you can manipulate an Orchid account using our web3 website. In general, each one of these pages helps you make a call to our nanopayment Ethereum smart contract. </p>
+<ul>
+<li>
+<p><a href="https://account.orchid.com"><strong>Create account</strong></a>
+Creates an Orchid account. Requires OXT and ETH. </p>
+</li>
+<li>
+<p><a href="https://account.orchid.com/#addFunds"><strong>Add funds</strong></a>
+Adds OXT to your balance and deposit.</p>
+</li>
+<li>
+<p><a href="https://account.orchid.com/#withdrawFunds"><strong>Withdraw funds</strong></a>
+Withdraws funds from your account to an Ethereum wallet.</p>
+</li>
+<li>
+<p><a href="https://account.orchid.com/#moveFunds"><strong>Move funds</strong></a>
+Moves funds from your balance to your deposit. </p>
+</li>
+<li>
+<p><a href="https://account.orchid.com/#lockFunds"><strong>Unlock Funds</strong></a>
+Locks and unlocks your deposit for withdrawal.</p>
+</li>
+<li>
+<p><a href="https://account.orchid.com/#balances"><strong>View Balances</strong></a>
+Displays all the information about your account, including the deposit, balance, public signer key and Ethereum wallet address.</p>
+</li>
+</ul>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../faq/" class="btn btn-neutral float-right" title="Orchid FAQ">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href=".." class="btn btn-neutral" title="Home"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href=".." style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../faq/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../search/main.js" defer></script>
+
+</body>
+</html>

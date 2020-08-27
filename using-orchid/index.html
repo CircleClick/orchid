@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <title>How to Use Orchid - Orchid</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "How to Use Orchid";
+    var mkdocs_page_input_path = "using-orchid.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> Orchid</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="..">Home</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../accounts/">Orchid Accounts</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../faq/">Orchid FAQ</a>
+	    </li>
+          
+            <li class="toctree-l1 current">
+		
+    <a class="current" href="./">How to Use Orchid</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l2"><a href="#how-to-use-orchid">How to Use Orchid</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l3" href="#home-screen">Home Screen</a></li>
+        
+            <li><a class="toctree-l3" href="#hops">Hops</a></li>
+        
+        </ul>
+    
+
+    <li class="toctree-l2"><a href="#config-importexport">Config Import/Export</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l3" href="#hop-configuration">Hop Configuration</a></li>
+        
+            <li><a class="toctree-l3" href="#complete-configuration-hops-configuration">Complete Configuration (Hops Configuration)</a></li>
+        
+        </ul>
+    
+
+    <li class="toctree-l2"><a href="#gathering-logs">Gathering Logs</a></li>
+    
+
+    <li class="toctree-l2"><a href="#android-prerequisites">Android Prerequisites</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l3" href="#android-and-ios-prerequisites">Android and iOS Prerequisites</a></li>
+        
+            <li><a class="toctree-l3" href="#cydia-impactor">Cydia Impactor</a></li>
+        
+            <li><a class="toctree-l3" href="#adb-logcat-android">adb logcat (Android)</a></li>
+        
+            <li><a class="toctree-l3" href="#sanitizing-the-logs">Sanitizing the Logs</a></li>
+        
+            <li><a class="toctree-l3" href="#sharing-the-logs">Sharing the Logs</a></li>
+        
+        </ul>
+    
+
+    </ul>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">Orchid</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>How to Use Orchid</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="how-to-use-orchid">How to Use Orchid</h1>
+<h2 id="home-screen">Home Screen</h2>
+<p>Orchid’s home screen is a representation of your device’s Internet connection. The switch in the upper right corner turns Orchid on/off and the middle section allows you to add and delete ‘hops’ which are VPN connections. On the bottom, there are two tabs. One is for Hops, which is the home screen, and the Traffic tab is a network protocol analyzer that allows you to see information about your phone's network connections.</p>
+<p>The simplest configuration for Orchid is to use just one VPN connection. When configured with one hop, Orchid is similar to a typical VPN app, which can only connect to one VPN server at a time. Websites that you visit will then see the IP address and details of the VPN server as opposed to the IP address associated with your device. </p>
+<p>When you add multiple connections, Orchid uses layered encryption to route your traffic through each connection. If a multiple hop route is constructed, traffic flows through the hops from the top to the bottom. The Orchid app supports Orchid VPN connections as well as typical OpenVPN connections. </p>
+<p>Add a hop by clicking on the Add Hop button in the middle of the screen and then going to the hop selection screen. To delete a hop, swipe it to the right or left.</p>
+<p>Each hop to an Orchid node requires an Orchid account to pay for service. Read more about how to setup an Orchid account.</p>
+<p>For more information about Orchid in general, read the About Orchid section. For information on what kinds of protections Orchid provides, read the Security and Privacy section.</p>
+<h2 id="hops">Hops</h2>
+<p>Orchid ‘hops’ are vpn connections to the Internet. Examples include a connection to an Orchid node or an OpenVPN connection to a VPN server. You can add and delete hops from the homescreen. Each hop will need a form of authentication to make the server connection. </p>
+<p>Add a hop by clicking on the Add Hop button from the home screen and then selecting a way to add the hop. To add an Orchid hop, select "I have a QR code" if you generated a QR code from your Orchid account or select “I have an Orchid account” to manually input your Ethereum wallet address and generate a signing key that you can put into the app. To add an OpenVPN hop, select “I have an existing VPN subscription” and input the credentials.</p>
+<h3 id="openvpn-hops">OpenVPN hops</h3>
+<p>Orchid supports OpenVPN. If you have an existing VPN provider, you can add a hop using OpenVPN credentials. To add an OpenVPN hop, click Add Hop -&gt; I have an existing VPN subscription. Then enter your username, password and paste in the configuration for your OpenVPN connection.</p>
+<h3 id="orchid-hops">Orchid hops</h3>
+<p>Orchid has its own VPN wireline protocol, the Orchid protocol. The traffic to and from Orchid nodes uses the Orchid protocol. The traffic looks like webRTC traffic, which is advantageous for security and includes tiny nanopyments that flow with the traffic.</p>
+<p>Each Orchid node also has a curator — this is the curated list that is associated with the hop. When a connection is initiated, the curator creates a subset of the available Orchid nodes for the hop to create the connection. </p>
+<p>The main component of the Orchid node is going to be the Orchid account associated with it. Each hop requires a valid Orchid account to continue to pay for VPN service.</p>
+<h3 id="linking-an-orchid-account">Linking  an Orchid Account</h3>
+<p>To add an Orchid account, open the app and select "New Hop" on the homescreen and then "Link Orchid Account" from the add hop screen. Scan or copy/paste the code into the app.</p>
+<p>Once you scan the QR code, the app will create a hop using that Orchid account and your default curator settings. You will then be dropped into the hop information screen that shows the saved information. Using the "Share Orchid Account" button, you can pop a QR code and share the Orchid account you just created with other people or devices. Press the back arrow to get back to the main screen. </p>
+<p>From the main screen, turn the toggle in the upper right to turn Orchid on.</p>
+<h1 id="config-importexport">Config Import/Export</h1>
+<h2 id="hop-configuration">Hop Configuration</h2>
+<p>A configuration specifying all details needed to connect to a single Orchid hop. It begins with <code>account = ...</code></p>
+<h3 id="export">Export</h3>
+<p>To export a hop configuration, you must first add and configure a 'New Hop' within the Orchid iOS or Android application. Once this is complete, select the hop from the main screen. Scroll down and click the purple 'Share Orchid Account' button. This will display a prominant QR code representation of the Hop Configuration that you can scan and import from a different device. Running the QR code through any decoder will reveal the raw configuration contained within.</p>
+<h3 id="import">Import</h3>
+<p>From the main screen within the Orchid iOS or Android application, select <code>New Hop -&gt; I have a QR code</code>. You can then click the purple <code>Scan</code> button to quickly scan and import a Hop Configuration QR code. Alternatively, if you have the raw Hop Configuration, copy it to your device's clipboard and click the <code>Paste</code> button.</p>
+<h2 id="complete-configuration-hops-configuration">Complete Configuration (Hops Configuration)</h2>
+<p>A configuration made up of the hop configurations for all hops setup within the application.  It begins with <code>hops = ...</code></p>
+<h3 id="export_1">Export</h3>
+<p>From within the Orchid iOS or Android application, open the hamburger menu (<code>☰</code>) in the top left corner. Next, go to <code>Settings -&gt; Manage Configuration (beta) -&gt; Export</code>. This will display the raw complete configuration (hops configuration). You can copy it to your device's clipboard using the purple <code>Copy</code> button at the bottom. Alternatively, you can produce a QR Code representation by clicking the QR Code button immediately to the left of the <code>Copy</code> button.</p>
+<h3 id="import_1">Import</h3>
+<p>From within the Orchid iOS or Android application, open the hamburger menu (<code>☰</code>) in the top left corner. Next, go to <code>Settings -&gt; Manage Configuration (beta) -&gt; Import</code>. You can either paste the raw configuration into the text field or click on the QR Code button at the bottom to scan a QR Code representation of the configuration. After doing so, click the <code>Import</code> button to save. Note that this will overwrite all existing configured hops within the application.</p>
+<h1 id="gathering-logs">Gathering Logs</h1>
+<p>When debugging client-side issues, you might be requested to share logs. These logs provide advanced details about what the Orchid client is doing behind the scenes to provide you with a private browsing experience. This page is designed to help you collect and share the logs.</p>
+<h1 id="android-prerequisites">Android Prerequisites</h1>
+<p>Start by turning on developer and debugging mode on the phone by going to <code>Settings -&gt; About Phone -&gt; About Software</code> and tapping on the build number repeatedly until it prompts you to enable developer mode. Then go to <code>Settings -&gt; Developer Settings -&gt; Turn on USB Debugging</code>. Finally, you can run the following command on your computer with your phone connected via USB to view the logs.</p>
+<h2 id="android-and-ios-prerequisites">Android and iOS Prerequisites</h2>
+<p>When you connect your device to your computer, it will prompt you to trust the computer. It is important that you do so. Otherwise, you will be unable to collect logs.</p>
+<h2 id="cydia-impactor">Cydia Impactor</h2>
+<p>The easiest way to gather logs from both iOS and Android devices is through <a href="http://www.cydiaimpactor.com">Cydia Impactor</a>. In the main window, use the select box to pick the correct device (if you only have one mobile device connected to your computer, this will be done for you). Next, go to <code>Device -&gt; Watch Log...</code>. A terminal window will appear and it will start to show a streaming syslog from your mobile device.</p>
+<h2 id="adb-logcat-android">adb logcat (Android)</h2>
+<p>If you are using an Android device, you can alternatively collect logs through the Android Debug Bridge (ADB). You can follow this <a href="https://www.xda-developers.com/install-adb-windows-macos-linux/">guide</a> to install adb on Windows, macOS, or Linux. Once installed, you can run the following command in a terminal to view the logs:</p>
+<pre><code>adb logcat
+</code></pre>
+
+<h2 id="sanitizing-the-logs">Sanitizing the Logs</h2>
+<p>The logs you gather will contain information from all applications and actions taken on your device during the period that logs are being gathered. These are not all necessary for debugging purposes. You can optionally filter out all lines that do not contain the string <code>orchid</code> as a quick way to sanitize the output. You can do this with a command like:</p>
+<pre><code>grep -i 'orchid' client.log
+</code></pre>
+
+<p>Where  <code>client.log</code> is the file containing the syslog output from the device. You should also be careful to filter out your various secret keys from the logs:</p>
+<pre><code>grep -vi 'secret' client.log
+</code></pre>
+
+<h2 id="sharing-the-logs">Sharing the Logs</h2>
+<p>The logs you gather will be quite long. You almost certainly do not want to paste them in their entirety into something like a Telegram message. Instead, we encourage you to either share them as an attachment via your preferred method of communication. Or if you are using a communication platform that doesn't support attachments, you can utilize a private pastebin service such as <a href="https://gist.github.com">GitHub Gists</a>, which will provide you with a secret URL you can share to grant access to your logs.</p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="../faq/" class="btn btn-neutral" title="Orchid FAQ"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../faq/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+    </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../search/main.js" defer></script>
+
+</body>
+</html>
